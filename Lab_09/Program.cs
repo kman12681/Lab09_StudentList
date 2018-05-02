@@ -274,27 +274,5 @@ namespace Lab_09
             }
             return input;
         }
-
-        //static bool DoAgain()
-        //{
-        //    while (true)
-        //    {
-        //        Console.Write("Would you like to learn about or add another student? (y/n): ");
-
-        //        string input = Console.ReadLine().ToUpper();
-        //        if (input == "Y")
-        //        {
-        //            return true;
-        //        }
-        //        else if (input == "N")
-        //        {
-        //            return false;
-        //        }
-        //        {
-        //            Console.WriteLine();
-        //            Console.WriteLine("Not a valid entry.");
-        //        }
-        //    }
-        //}
     }
 }
