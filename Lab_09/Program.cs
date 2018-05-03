@@ -12,7 +12,7 @@ namespace Lab_09
     {
         static void Main(string[] args)
         {
-            List<string> Students = new List<string>();
+            List<string> Students = new List<string>();  
 
             Students.Add("George Washington");
             Students.Add("Dennis Rodman");
@@ -52,9 +52,9 @@ namespace Lab_09
                 Console.WriteLine("Would you like to learn about a student (\"learn\"), add a new student's information (\"add\"), or \"quit\"?\n");
                 string response1 = LearnAddQuit(Console.ReadLine().ToLower());
 
-                if (response1 == "add")
+                if (response1 == "add")         // invoke the following methods to take input from user and add them to the appropriate lists.
                 {
-                    string addedStudent = GetStudent();
+                    string addedStudent = GetStudent();    
                     Students.Add(addedStudent);
 
                     string addedFood = GetFood();
@@ -76,7 +76,7 @@ namespace Lab_09
                     Console.Write($"Enter a student's ID number (1 - {Students.Count}) to learn about their favorite things.\n");
                     Console.WriteLine();
                     string input = Console.ReadLine();
-                    int index = Validate(input, Students);
+                    int index = Validate(input, Students);    // invoke method to validate integer
                     index--;
 
                     Console.WriteLine();
@@ -85,7 +85,7 @@ namespace Lab_09
 
                     Console.WriteLine($"Would you like to know {Students[index]}'s favorite \"food\", \"number\", or \"song\"?\n\nYou can also go \"back\" to the beginning or \"quit\".\n");
                     Console.Write("Entry: ");
-                    string response2 = ValidateWord(Console.ReadLine().ToLower());
+                    string response2 = ValidateWord(Console.ReadLine().ToLower());  // invoke method to validate word input
 
                     if (response2 == "food")
                     {
